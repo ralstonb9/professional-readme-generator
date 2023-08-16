@@ -26,14 +26,30 @@ const questions = [
         name: "usage",
     },
     {
+        type: "list",
+        message: "What type of license does your project have?",
+        name: "license",
+        choices: ["MIT", "ISC", "gpl-2.0", "afl-3.0", "wtfpl", "no license"]
+    },
+    {
         type: "input",
         message: "List any collaborators or third-party assets with their name and a link to reach them.",
         name: "credits",
     },
     {
         type: "input",
-        message: "What type of licensing does your project have?",
-        name: "license",
+        message: "Provide instructions for running tests.",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "What is your Github username?",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "What is your e-mail address?",
+        name: "email",
     }
 ];
 
