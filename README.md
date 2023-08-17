@@ -15,7 +15,7 @@ In this Module we were given starter code and told to finish it so that it would
 
 ## Demonstration
 
-
+https://drive.google.com/file/d/1_6wfv1vchKAWk2qeXrpR-LDA2bOKr6MI/view
 
 ## Installation
 
@@ -23,7 +23,7 @@ First you must have Node installed on your device, then you need to open your te
 
 ## Usage
 
-After you have Installed Node and the inquirer package simply run the command `node index.js` then answer the prompts and your professional README will be created automatically.
+After you have Installed Node and the inquirer package simply run the command `node index.js` in your VS Code terminal then answer the prompts and your professional README will be created automatically.
 
 ## License
 

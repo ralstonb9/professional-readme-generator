@@ -44,7 +44,7 @@ function renderLicenseSection(license) {
     return `
     ## License
 
-    This project is covered under the ${license} license, which you can learn more about by clicking on the following link: ${renderLicenseLink(data.license)}
+    This project is covered under the ${license} license, which you can learn more about by clicking on the following link: ${renderLicenseLink(license)}
     `;
   };
   return "";
