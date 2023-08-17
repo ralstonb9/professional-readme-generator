@@ -3,15 +3,15 @@
 function renderLicenseBadge(license) {
   switch(license){
     case "MIT":
-      return "![license: MIT]https://img.shields.io/badge/license-MIT-blue.svg";
+      return "![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)";
     case "ISC":
-      return "![license: ISC]https://img.shields.io/badge/license-ISC-blue.svg";
+      return "![license: ISC](https://img.shields.io/badge/license-ISC-blue.svg)";
     case "GPL-2.0":
-      return "![license: GPL-2.0]https://img.shields.io/badge/license-GPL2-blue.svg";
+      return "![license: GPL-2.0](https://img.shields.io/badge/license-GPL2-blue.svg)";
     case "AFL-3.0":
-      return "![license: AFL-3.0]https://img.shields.io/badge/license-AFL3-blue.svg";
+      return "![license: AFL-3.0](https://img.shields.io/badge/license-AFL3-blue.svg)";
     case "WTFPL":
-      return "![license: WTFPL]https://img.shields.io/badge/license-WTFPL-blue.svg";
+      return "![license: WTFPL](https://img.shields.io/badge/license-WTFPL-blue.svg)";
     default:
       return "";
   }
@@ -23,15 +23,15 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch(license) {
     case "MIT":
-      return "";
+      return "[Lincense Information](https://opensource.org/licenses/)";
     case "ISC":
-      return "";
-    case "gpl-2.0":
-      return "";
-    case "afl-3.0":
-      return "";
-    case "wtfpl":
-      return "";
+      return "[Lincense Information](https://opensource.org/licenses/)";
+    case "GPL-2.0":
+      return "[Lincense Information](https://opensource.org/licenses/)";
+    case "AFL-3.0":
+      return "[Lincense Information](https://opensource.org/licenses/)";
+    case "WTFPL":
+      return "[Lincense Information](https://opensource.org/licenses/)";
     default:
       return "";
   }
@@ -44,7 +44,7 @@ function renderLicenseSection(license) {
     return `
     ## License
 
-    This project is covered under the ${license}, which you can learn more about by clicking ont the following link: ${renderLicenseLink(license)}
+    This project is covered under the ${license}, which you can learn more about by clicking on the following link: ${renderLicenseLink(license)}
     `;
   };
   return "";
@@ -55,7 +55,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ${renderLicenseBadge(license)}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   
